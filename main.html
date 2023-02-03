@@ -1,16 +1,86 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+        <title>carousel slide using bootstrap</title>
+        <link rel="stylesheet" href="style.css">
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    </head>
 
-</body>
+    <body>
+
+        <div class="d-flex justify-content-center">
+        <div id="carouselExample" class="carousel carousel-dark d-block slide w-50 my-5" data-bs-ride="carousel">
+            <!-- carousel indicator div -->
+            <div class="carousel-indicators">
+                <!-- 5 buttons indicator -->
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+            </div>
+
+            <div class="carousel-inner carousel slide" id="myCarousel">
+                <div class="carousel-item  active first-slide">
+                    <img  class="d-block w-100" src="https://images.unsplash.com/photo-1512988081803-9edc352397b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG9yYW5nZSUyMGZsb3dlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+                        alt="img">
+                </div>
+
+                <div class="carousel-item second-slide">
+                    <img  class="d-block w-100" src="https://images.unsplash.com/photo-1604085572504-a392ddf0d86a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60"
+                        alt="img">
+                </div>
+
+                <div class="carousel-item  active third-slide">
+                    <img  class="d-block w-100" src="https://images.unsplash.com/photo-1590872000386-4348c6393115?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8b3JhbmdlJTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60"
+                        alt="img">
+                </div>
+
+                <div class="carousel-item  fourth-slide">
+                    <img  class="d-block w-100" src="https://images.unsplash.com/photo-1442458017215-285b83f65851?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b3JhbmdlJTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60"
+                        alt="img">
+                </div>
+
+                <div class="carousel-item fifth-slide ">
+                    <img  class="d-block w-100 " src="https://images.unsplash.com/photo-1592484123778-590f6c237611?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG9yYW5nZSUyMGZsb3dlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+                        alt="img">
+                </div>
+            </div>
+
+            <!-- left right buttons -->
+            <!-- left-button -->
+            <button type="button" class="carousel-control-prev glyphicon-chevron-left left carousel-control" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon glyphicon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <!-- right button -->
+            <button type="button" class="carousel-control-next glyphicon-chevron-right right carousel-control" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon glyphicon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+    </div>
+<!-- <img src="https://media.istockphoto.com/id/171312337/photo/gerbera.jpg?s=612x612&w=is&k=20&c=b-AwIPGKBE8CcNEtxu8-UXowptCVikxZIjIMeBO8MrE=" alt=""> -->
+
+
+
+      
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+
+    </body>
 
 </html>
